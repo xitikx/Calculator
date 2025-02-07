@@ -17,6 +17,6 @@ app.post("/subtract", (req, res) => {
 });
 
 // Start the service
-app.listen(5001, () => {
+app.listen(8080, () => {
     console.log("Arithmetic Service running on port 5001");
 });
