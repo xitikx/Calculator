@@ -28,7 +28,6 @@ app.post("/divide", (req, res) => {
     res.json({ result });
 });
 
-// Start the service
 app.listen(5001, () => {
     console.log("Arithmetic Service running on port 5001");
 });
