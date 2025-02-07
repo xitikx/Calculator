@@ -28,6 +28,12 @@ app.post("/divide", (req, res) => {
     res.json({ result });
 });
 
+app.post("/exponent", (req, res) => {
+    const{ num1, num2 } = req.body;
+    const result = Math.pow(num1, num2);
+    res.json({ result });
+})
+
 app.listen(5001, () => {
     console.log("Arithmetic Service running on port 5001");
 });
