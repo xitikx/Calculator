@@ -16,6 +16,18 @@ app.post("/subtract", (req, res) => {
     res.json({ result });
 });
 
+app.post("/multiply", (req, res) => {
+    const { num1, num2 } = req.body;
+    const result = num1 * num2;
+    res.json({ result });
+});
+
+app.post("/divide", (req, res) => {
+    const { num1, num2 } = req.body;
+    const result = num1 / num2;
+    res.json({ result });
+});
+
 // Start the service
 app.listen(5001, () => {
     console.log("Arithmetic Service running on port 5001");
